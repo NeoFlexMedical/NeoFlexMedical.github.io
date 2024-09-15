@@ -173,6 +173,56 @@ input, select, textarea {
 		font-size: 0.7em;
 		line-height: 1.5em;
 	}
+/* Adjusted styles for Meet the Team section */
+#one .team-description {
+    font-size: 1.5em;
+  margin-top: 0;
+    color: #333; /* Darker color */
+    text-align: center;
+    margin-bottom: 0;
+}
+
+#one .team-img {
+    max-width: 50%; /* Control the image size with percentage */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10%;
+	margin-bottom: 0;
+	padding: 0;
+}
+
+#one h3 {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold; /* Boldify the names */
+    margin-top: 0.5em;
+    margin-bottom: 0; /* Decreased gap between name and position */
+}
+
+#one .team-position {
+    text-align: center;
+    font-size: 1em;
+    line-height: 1.4em;
+    color: #333; /* Darker color for position */
+	margin-bottom: 0.5em; /* Reduced margin */
+}
+#one {
+    padding: 1.3em 0; /* Reduced overall padding of the section */
+    background-color: #fff;
+}
+
+/* Media query to adjust for mobile screens */
+@media screen and (max-width: 980px) {
+    #one .col-6 {
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    #one .team-img {
+        max-width: 40%; /* Slightly larger image on smaller screens */
+    }
+}
 
 	sub {
 		font-size: 0.8em;
@@ -287,6 +337,14 @@ input, select, textarea {
 			}
 
 		}
+		
+		.highlight-paragraph {
+    font-size: 18px; /* Set your preferred font size */
+    font-weight: bold; /* Make the whole paragraph bold */
+    color: #333; /* Optional: Set the text color */
+    line-height: 1.5; /* Optional: Adjust the line height */
+}
+
 
 /* Row */
 
@@ -3072,10 +3130,10 @@ input, select, textarea {
 			}
 
 		#header:after {
-			-moz-transition: opacity 1s ease;
-			-webkit-transition: opacity 1s ease;
-			-ms-transition: opacity 1s ease;
-			transition: opacity 1s ease;
+			-moz-transition: opacity 0.5s ease;
+			-webkit-transition: opacity 0.5s ease;
+			-ms-transition: opacity 0.5s ease;
+			transition: opacity 0.5s ease;
 			background-image: linear-gradient(45deg, #4fa49a, #4361c2);
 			content: '';
 			height: 100%;
